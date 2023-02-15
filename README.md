@@ -1,6 +1,8 @@
 # Semester 3 | Data Structures & Algorithms
 
 ## Sprint 1: Secret Message Database
+
+Written By: Makenzie Roberts, Kara Balsom, Glen May, & David Turner.
  
 This is a group project for Sprint #1 (3nd Semester) at Keyin College's Software Development Program.  
 
