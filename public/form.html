@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Secret Database</title>
+	</head>
+	<body>
+		<header>
+			<h1>Secret Database</h1>
+		</header>
+
+		<form action="/add" method="POST">
+			<fieldset>
+				<h2>Add new message</h2>
+				<label>Your Agent ID #</label>
+				<br />
+				<input
+					type="text"
+					id="sender-id"
+					name="id"
+					placeholder="Enter your agent ID (eg. 1, 2, 3)..."
+					required
+				/>
+				<br /><br />
+
+				<label>Data</label>
+				<br />
+				<textarea
+					type="text"
+					id="data"
+					name="data"
+					placeholder="Enter your message..."
+					required
+				></textarea>
+				<br /><br />
+
+				<label
+					>Structure ID<br />
+					<span class="structure-label-details"
+						><strong>Urgent Messages:</strong> Enter <b>1</b> to add this
+						message to the <b>stack</b>.
+						<br />
+						<strong>Non-critical messages:</strong> Enter <b>2</b> to add this
+						data to the <b>queue</b>.
+					</span></label
+				>
+				<br />
+				<input
+					type="text"
+					id="send-structure"
+					name="structure"
+					placeholder="Enter 1 for stack or 2 for queue..."
+					required
+				/>
+				<br /><br />
+
+				<button type="reset">Reset</button>
+				<button type="submit">Submit</button>
+			</fieldset>
+		</form>
+		<form action="/view" method="GET">
+			<fieldset>
+				<h2>View a message</h2>
+
+				<label>Your Agent ID #</label>
+				<br />
+				<input
+					type="text"
+					id="receiver-id"
+					name="id"
+					placeholder="Enter your agent ID (eg. 1, 2, 3)..."
+					required
+				/>
+				<br /><br />
+
+				<label
+					>Structure ID<br />
+					<span class="structure-label-details"
+						><strong>Urgent Messages:</strong> Enter <b>1</b> to receive a
+						message from the <b>stack</b>.
+						<br />
+						<strong>Non-critical messages:</strong> Enter <b>2</b> to receive a
+						message from the <b>queue</b>.
+					</span></label
+				>
+				<br />
+				<input
+					type="text"
+					id="receive-structure"
+					name="structure"
+					placeholder="Enter 1 for stack or 2 for queue..."
+					required
+				/>
+				<br /><br />
+				<button type="reset">Reset</button>
+				<button type="submit">Submit</button>
+				<br /><br /><br />
+			</fieldset>
+		</form>
+
+		<footer>
+			<hr />
+			<h4>
+				Please enter 'http://localhost:3000/close' to close the database
+				connection before closing this window
+			</h4>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+body {
+	background-color: black;
+	font-family: "Courier New", Courier, monospace;
+	margin: 0 auto;
+}
+
+header {
+	background-color: grey;
+	color: black;
+	font-size: x-large;
+	height: fit-content;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	background-color: grey;
+	color: black;
+	font-size: large;
+	margin-top: 2px;
+	text-align: center;
+}
+
+form {
+	background-color: black;
+	color: grey;
+	margin: 20px auto;
+	width: 50%;
+}
+
+label {
+	font-weight: bold;
+	color: lightgrey;
+}
+
+input,
+textarea {
+	background-color: black;
+	color: rgb(89, 255, 89);
+	border: 2px solid lightgrey;
+	margin-top: 5px;
+	width: 50%;
+}
+
+input:focus,
+textarea:focus {
+	border: 2px solid rgb(89, 255, 89);
+	outline: none;
+}
+.structure-label-details {
+	color: rgb(121, 121, 121);
+	font-size: 80%;
+	font-weight: normal;
+}
+
+button {
+	background-color: grey;
+}
+
+footer {
+	margin-top: 3%;
+	text-align: center;
+}
